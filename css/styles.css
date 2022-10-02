@@ -22,13 +22,13 @@
     font-size: normal;
 }
 /* reset */
-.link, .link-footer, .link-address, .list-button {
+.link, .link-footer, .link-address, .list-button, .socials-link, .client-list, .client-link, .social-link, .social-item{
     text-decoration: none;
     color: currentColor;
     font-style: normal;
     
 }
-.list, .list-contact, .group, .list-contact-footer, .link, .link-footer, .link-address, .list-button {
+.list, .list-contact, .group, .list-contact-footer, .link, .link-footer, .link-address, .list-button, .socials-link, .client-list, .client-link, .social-link, .social-item {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -53,6 +53,10 @@ img {
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
+}
+.flex{
+    display: flex;
+    align-items: baseline;
 }
 /* Hearder */
 
@@ -140,8 +144,25 @@ img {
 .tel:active { 
     color: var(--accent-txt-col);
 }
-/* Main */
 
+/* Main */
+.first-section{
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+    background: #2F303A;
+    padding-top: 200px;
+    padding-bottom: 200px; 
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: var(--footer-bg-col);
+    text-align: center;
+}
 .logo-btn {
    
     padding: 10px 32px;
@@ -176,12 +197,7 @@ img {
     text-transform: uppercase;
     color: var(--light-txt-col);
 }
-.hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-color: var(--footer-bg-col);
-    text-align: center;
-}
+
 .visually-hidden{
     position: absolute;
     width: 1px;
@@ -202,6 +218,14 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main-txt-col);
+}
+.features-section-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--block-bg-col);
+    margin-bottom: 30px;
+    height: 120px;
 }
 .list-adventages {
     display: flex;
@@ -236,7 +260,8 @@ img {
     background-color: var(--block-bg-col);
 }
 .activities,
-.team {
+.team,
+.heading-2 {
     margin-bottom: 50px;
     font-family: var(--main-font);
     font-weight: 700;
@@ -271,6 +296,55 @@ img {
 }
 .team {
     background-color: var(--block-bg-col);
+}
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+.socials-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color:#AFB1B8;
+}
+.socials-link:hover, 
+.socials-link:focus{
+    background-color: var(--accent-txt-col);
+    color: var(--light-txt-col);
+}
+.socials-icon {
+    fill: currentColor;
+}
+.client-list{
+    display: flex;
+    gap:30px;
+    margin: 0;
+    padding: 0;
+}
+.client-list-link{
+    width: 170px;
+    height: 92px;
+}
+.client-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #afb1b8;
+    border-radius: 4%;
+    fill: #afb1b8;
+}
+.client-link:hover, 
+.client-link:focus{
+    fill: var(--accent-txt-col);
+    border-color: var(--accent-txt-col);
 }
 
 /* Footer */
@@ -332,6 +406,51 @@ img {
     font-weight: 400;
     color: rgba(255, 255, 255, 0.6);
 }
+.footer-left{
+    margin-right: 70px;
+}
+.footer-centre{
+    box-sizing: border-box;
+    display: block;
+}
+.join{
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.join-list-link{
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+.social-link{
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.social-item{
+    width: 44px;
+    height: 44px;
+}
+.social-link:hover, 
+.social-link:focus{
+    background-color: #2196F3;
+}
+.social-icon-footer{
+    fill: #FFFFFF;
+}
+
 /* Portfolio */ 
 
 .group {
