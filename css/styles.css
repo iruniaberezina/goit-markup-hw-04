@@ -144,7 +144,11 @@ img {
 .tel:active { 
     color: var(--accent-txt-col);
 }
-
+.icon-contacts{
+    fill: currentColor;
+    margin-right: 10px;
+    align-items: center;
+}
 /* Main */
 .first-section{
     max-width: 1600px;
